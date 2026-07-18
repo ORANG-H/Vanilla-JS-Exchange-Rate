@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #0f172a;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+        }
+
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: none;
+        }
+
+        button {
+            background: #22c55e;
+            color: white;
+            cursor: pointer;
+        }
+
+        .currency-box {
+            display: flex;
+            gap: 10px;
+        }
+
+        .currency-box select {
+            width: 100%;
+        }
+
+        .result {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>💱 Currency Converter</h2>
+
+    <input type="number" id="amount" placeholder="Amount">
+
+    <div class="currency-box">
+        <select id="fromCurrency"></select>
+        <select id="toCurrency"></select>
+    </div>
+
+    <button id="convertBtn">Convert</button>
+
+    <div class="result">
+        Result: <span id="result">0</span>
+    </div>
+</div>
+
+<script type="module" src="/main.js"></script>
+</body>
+</html>
